@@ -38,7 +38,7 @@ var random = function(arr) {
 	var randomNum = getRandomArbitrary();
 	console.log(randomNum);
 	if(arr.indexOf(randomNum) !== -1) {
-			alert(true);
+		alert(true);
 	} else {
 		alert(false);
 	}
@@ -48,27 +48,36 @@ var random = function(arr) {
 
 //Create a copy of first and save it into second. Then, add 6 and 7 to the end of second. When you run this, first should be just [1,2,3,4,5] and second will be [1,2,3,4,5,6,7] if you created your copy correctly.
 var first = [1,2,3,4,5];
-var second;
+var second =
 
   //code here
 
-alert(first) //[1,2,3,4,5];
-alert(second) //[1,2,3,4,5,6,7];
+var second = first.slice(0, 5);
 
+second.push(6, 7);
 
+alert(first); //[1,2,3,4,5];
+alert(second); //[1,2,3,4,5,6,7];
 
 /* NEXT PROBLEM - NEXT PROBLEM - NEXT PROBLEM */
-
-
 
 //write a function called longest that takes in our sentence variable, and returns the longest word in that sentence.
 var sentence = "Dev Mountain is the best"
 
   //code here
 
+var longest = function(str) {
+	var string = str.split(" ");
+	var longestWord = "";
+	for (var i = 0; i < string.length; i++) {
+		if(longestWord.length < string[i].length) {
+			longestWord = string[i];
+		}
+	}
+	return longestWord;
+};
 
 /* NEXT PROBLEM - NEXT PROBLEM - NEXT PROBLEM */
-
 
 
 //write a function called capitalize that takes in the myPoem variable and capitalizes every word 
