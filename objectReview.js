@@ -2,22 +2,36 @@
 
   //Your code here
 
+var favoriteThings = {
+  band: "Taylor Swift",
+  food: "Guacamole",
+  person: "Emily",
+  book: "Harry Potter",
+  movie: "Cactching Fire",
+  holiday: "Christmas"
+}
+
+
 //After you've made your object, add another key named 'car' with the value being your favorite car and then another key named 'brand' with the value being your favorite brand.
 
   //Your code here
+
+  favoriteThings.car = "Deuce";
+  favoriteThings.brand = "Nike";
 
 //Now change the food key in your favoriteThings object to be 'Lettuce' and change the book key in your favoriteThings object to be '50 Shades of Gray'. 
 
   //Your code here
 
+favoriteThings.food = "Lettuce";
+favoriteThings.book = "50 Shades of Gray";
+
 //Now, alert your favorite person, then alert your favorite book.
 
   //Your code here
-
-
+alert(favoriteThings.person);
 
 /* NEXT PROBLEM - NEXT PROBLEM - NEXT PROBLEM */
-
 
 
 var user = {
