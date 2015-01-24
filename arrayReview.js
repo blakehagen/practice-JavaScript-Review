@@ -4,7 +4,9 @@ var threeItems = [1,2,3];
 
   //code here
 
-
+var last = function() {
+	alert(threeItems[(threeItems.length -1)]);
+}
 
 /* NEXT PROBLEM - NEXT PROBLEM - NEXT PROBLEM */
 
