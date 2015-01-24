@@ -79,12 +79,34 @@ var longest = function(str) {
 
 /* NEXT PROBLEM - NEXT PROBLEM - NEXT PROBLEM */
 
-
 //write a function called capitalize that takes in the myPoem variable and capitalizes every word 
 var myPoem = 'What is a jQuery but a misunderstood object?'
 //What is a jQuery but a misunderstood object? --> What Is A JQuery But A Misunderstood Object?
 
   //code here
+
+var capitalize = function(poem) {
+	var poemArr = str.split(" ");
+	var newPoemArr = [];
+	for (var i = 0; i < poemArr.length; i++) {
+		poemArr[i].charAt(0).toUpperCase()
+
+	}
+
+
+
+
+
+
+
+
+
+var capitalize = function(str) {
+	return str.toUpperCase();
+}
+
+
+
 
 
 
@@ -94,3 +116,48 @@ var myPoem = 'What is a jQuery but a misunderstood object?'
 
 var theOdyssey = "function expression or function declaration? Tis an obvious choice";
 //Write a function called vowelCounter that takes in a string (theOdyssey) and returns how many vowels are in that string.
+
+var vowels = {
+	a: true,
+	e: true,
+	i: true,
+	o: true,
+	u: true
+}
+
+var vowelCounter = function(str, myObj, counter) {
+	var newArr = str.split("");	
+	for (var i = 0; i < newArr.length; i++) {
+		if(vowels[newArr[i]] === true) {
+			counter++;
+		}
+	};
+	return counter;
+};
+
+vowelCounter(theOdyssey, vowels, 0);  //this invokes it
+
+
+
+//another way
+
+var theOdyssey = "function expression or function declaration? Tis an obvious choice";
+
+var vowelCounter = function(str) {
+	var string = str.toUpperCase();
+	var count = 0;
+	for (var i = 0; i < string.length; i++) {
+		if (string[i] === "A" || string[i] === "E" || string[i] === "I" || string[i] === "O" || string[i] === "U") {
+			count++;
+		}
+	}
+	return count;
+};
+
+
+vowelCounter(theOdyssey); //this invokes it
+
+
+
+
+
