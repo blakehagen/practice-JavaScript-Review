@@ -1,8 +1,12 @@
 /* Declare and Define the functions here that will make the function calls below work properly */
 
-
+var first = function(names, callback) {
+  var firstName = names[0];
+  return callback (names[0]);
+}
 
 var names = ['Tyler', 'Cahlan', 'Ryan', 'Colt', 'Tyler', 'Blaine', 'Cahlan'];
+
 first(names, function(firstName){
   console.log('The first name in names is ', firstName)
 });
@@ -12,14 +16,17 @@ first(names, function(firstName){
 
 /* NEXT PROBLEM - NEXT PROBLEM - NEXT PROBLEM */
 
-
+var last = function(arr, cb) {
+  var lastName = names[names.length - 1];
+  return cb(names[names.length - 1]);
+}
 
 
 var names = ['Tyler', 'Cahlan', 'Ryan', 'Colt', 'Tyler', 'Blaine', 'Cahlan'];
+
 last(names, function(lastName){
   console.log('The last name in names is ', lastName);
 });
-
 
 
 
