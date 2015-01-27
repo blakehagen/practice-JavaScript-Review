@@ -34,13 +34,23 @@ last(names, function(lastName){
 
 //have the contains function return a boolean value for if the name is in the array or not.
 
+var contains = function(str, arr, cb) {
+  for (var i = 0; i < arr.length; i++) {
+    if (arr[i] === str) {
+      return cb(true);
+    } else {
+      return cb(false);
+    }
+  }
+};
 
 var names = ['Tyler', 'Cahlan', 'Ryan', 'Colt', 'Tyler', 'Blaine', 'Cahlan'];
+
 contains('Colt', names, function(yes){
   if(yes){
-    console.log('Colt is in the array');
+    console.log(true);
   } else {
-    console.log('Colt is not in the list');
+    console.log(false);
   }
 });
 
@@ -49,7 +59,7 @@ contains('Colt', names, function(yes){
 
 /* NEXT PROBLEM - NEXT PROBLEM - NEXT PROBLEM */
 
-
+var map = function()
 
 
 var numbers = [1,2,3,4,5];
