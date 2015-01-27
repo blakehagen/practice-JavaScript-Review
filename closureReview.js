@@ -11,6 +11,8 @@ var callFriend = function(){
 
   //code here
 
+var dialing = callFriend();
+dialing("123-456-7890");
 
 
 /*
